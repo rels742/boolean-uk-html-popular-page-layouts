@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+
+.container div {
+    border-radius: 4px;
+}
+
+.container {
+    margin: 0 50px;
+    display: grid;
+    background-color: rgb(243, 233, 233);
+    grid-gap: 20px;
+    
+   
+    grid-template: 
+    "header header header"
+    "left-top main-top right-top"   
+    "left-middle main-middle right-middle" 
+    "left-bottom main-bottom right-bottom"   /
+    200px 2fr 250px
+    ; 
+
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    grid-area: header;
+    height: 40px;
+    
+    background-color: rgb(233, 114, 114); 
+}
+
+.left-top {
+    display: grid;
+    place-items: center;
+    grid-area: left-top;
+    height: 300px;
+
+    background-color: orange; 
+}
+
+.main-top {
+    display: grid;
+    place-items: center;
+    grid-area: main-top;
+    height: 100px;
+
+    background-color: rgb(255, 225, 0); 
+}
+
+.right-top {
+    display: grid;
+    place-items: center;
+    grid-area: right-top;
+    height: 270px;
+
+    background-color: rgb(149, 255, 0); 
+}
+
+  .left-middle {
+    display: grid;
+    grid-area: left-middle;
+    place-items: center;
+    height: 150px;
+
+    background-color: rgb(0, 179, 255); 
+} 
+
+.main-middle {
+    display: grid;
+    grid-area: main-middle;
+    place-items: center;
+    height: 600px;
+
+    background-color: rgb(0, 255, 221); 
+}
+
+.right-middle {
+    display: grid;
+    grid-area: right-middle;
+    place-items: center;
+    height: 150px;
+
+    background-color: rgb(255, 0, 106); 
+
+}
+
+.left-bottom {
+    grid-area: left-bottom;
+    display: grid;
+    place-items: center;
+    height: 400px;
+
+    background-color: rgb(251, 198, 169); 
+}
+
+.main-bottom {
+    grid-area: main-bottom;
+    display: grid;
+    place-items: center;
+    height: 60px;
+
+    background-color: rgb(180, 181, 224); 
+}
+
+.right-bottom {
+    grid-area: right-bottom;
+    display: grid;
+    place-items: center;
+    height: 270px;
+
+    background-color: rgb(174, 0, 255); 
+} 
